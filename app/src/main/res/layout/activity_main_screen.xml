@@ -15,14 +15,14 @@
         android:text="Greeting+name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etGreeting"
+        android:id="@+id/tvGreeting"
         android:textSize="18sp" />
 
     <TextView
         android:text="Current time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etCurrentTime"
+        android:id="@+id/tvCurrentTime"
         android:layout_marginTop="20dp"
         android:textSize="18sp" />
 
@@ -35,7 +35,7 @@
         android:text="Your username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etYourUsername"
+        android:id="@+id/tvYourUsername"
         android:layout_marginTop="20dp"
         android:textSize="18sp" />
 
@@ -43,7 +43,7 @@
         android:text="Your Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etYourPassword"
+        android:id="@+id/tvYourPassword"
         android:layout_marginTop="20dp"
         android:textSize="18sp" />
 
@@ -57,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:id="@+id/button2" />
+        android:id="@+id/btContactAppMaker" />
 
 
 </LinearLayout>
