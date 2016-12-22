@@ -52,9 +52,14 @@ public class RegisterActivity extends AppCompatActivity {
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean successful = jsonResponse.getBoolean("success");
+                            boolean usernameTaken = jsonResponse.getBoolean("userTaken");
                             if (successful) {
                                 RegisterActivity.this.startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                                 Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                            } else if (usernameTaken) {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+                                builder.setMessage("Sorry, username already taken!");
+                                builder.setNegativeButton("Retry", null).create().show();
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 builder.setMessage("Registration Failed!");
